@@ -1,0 +1,165 @@
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/ptsans-400.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/ptsans-700.woff2");
+  font-display: swap;
+}
+
+
+body {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #F2F2F2;
+  text-align: center;
+}
+
+.page-wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #ffffff;
+}
+
+.section-title{
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #FFFFFF;
+  background-color: #756257;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  font-size: 20;
+  line-height: 26px;
+  color: #FFFFFF;
+  background-color:  #83B3D3;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Header */
+
+.site-menu-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Main */
+
+/* Wellcome */
+
+.wellcome {
+  background-color: #dbe9f2;
+  background-image: url('/img/index/index-background-wellcome.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Advantages */
+
+.advantages-desk {
+  font-size: 22px;
+  line-height: 36px;
+}
+
+/* Search-hotel  */
+
+.search-hotel-desk {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* Subscribe */
+
+.index-subscribe {
+  color: #ffffff;
+  background-color: #46424c;
+  background-image: url('/img/index/index-background-wellcome.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.index-subscribe .section-title {
+  color: #ffffff;
+}
+
+.subscribe-desk {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* Footer */
+
+.number {
+  font-size: 40px;
+  color: #000000;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Catalog */
+
+/* Inner-footer */
+
+.inner-footer {
+  color: #ffffff;
+  background-color: #73504A;
+  background-image: url('/img/catalog/catalog-background.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs-link {
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* Filter */
+
+.catalog-filter-title {
+  font-size: 20px;
+  font-weight: 26px;
+}
+
+.control-label {
+  line-height: 23px;
+}
+
+/* Sorted-cards */
+
+.card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+}
