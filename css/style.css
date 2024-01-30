@@ -3,7 +3,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/ptsans-400.woff2");
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -11,7 +11,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/ptsans-700.woff2");
+  src: url("/fonts/ptsans-700.woff2")  format("woff2");
   font-display: swap;
 }
 
@@ -53,7 +53,7 @@ body {
 
 .button {
   display: inline-block;
-  font-size: 20;
+  font-size: 20px;
   line-height: 26px;
   color: #FFFFFF;
   background-color:  #83B3D3;
@@ -103,7 +103,7 @@ body {
   background-color: #46424c;
   background-image: url('/img/index/index-background-wellcome.jpg');
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 
 .index-subscribe .section-title {
@@ -134,7 +134,7 @@ body {
   background-color: #73504A;
   background-image: url('/img/catalog/catalog-background.jpg');
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 
 /* Breadcrumbs */
@@ -149,7 +149,7 @@ body {
 
 .catalog-filter-title {
   font-size: 20px;
-  font-weight: 26px;
+  line-height:  26px;
 }
 
 .control-label {
