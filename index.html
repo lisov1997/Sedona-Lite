@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-body">
 
-  <div class="page-wrapper">
+  <div class="page-container">
 
     <!-- Хедер -->
 
@@ -51,7 +51,7 @@
 
     <!-- Мэйн -->
 
-    <main class="main-index">
+    <main class="main-index main-container">
       <h1 class="visually-hidden">Путешествие в Седону</h1>
       <section class="wellcome">
         <h2 class="visually-hidden">
@@ -115,38 +115,42 @@
         <a href="#" class="search-hotel-button button">ПОИСК ГОСТИНИЦЫ В седоне</a>
       </section>
       <section class="subscribe index-subscribe">
-        <h2 class="section-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-desk">Только полезная информация и никакого спама,
-          честное бойскаутское!</p>
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <input type="email" name="subscribe-email" id="subscribe-email">
-          <label for="subscribe-email">Ваш e-mail</label>
-          <input class="subscribe-submit" type="submit" value="Подписаться">
-        </form>
+        <div class="container subscribe-container">
+          <h2 class=" section-title">Подпишитесь на рассылку</h2>
+          <p class="subscribe-desk">Только полезная информация и никакого спама,
+            честное бойскаутское!</p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/courses" method="post">
+            <input type="email" name="subscribe-email" id="subscribe-email">
+            <label for="subscribe-email">Ваш e-mail</label>
+            <input class="subscribe-submit" type="submit" value="Подписаться">
+          </form>
+        </div>
       </section>
     </main>
 
     <!-- Футер -->
 
     <footer class="page-footer">
-      <ul class="footer-social">
-        <li class="social-item"><a href="https://twitter.com/htmlacademy_ru" class="social-link">
-            <span class="visually-hidden">Twitter</span></a>
-        </li>
-        <li class="social-item"><a href="https://www.facebook.com/htmlacademy" class="social-link">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="social-item">
-          <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="social-link">
-            <span class="visually-hidden">Youtube</span>
-          </a>
-        </li>
-      </ul>
-      <a class="number" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="copyright-link" href="https://htmlacademy.ru/">
-        <img src="img/index/footer-logo-htmlacademy.svg" alt="Разработано HTMLAcademy" width="115" height="34">
-      </a>
+      <div class="wrapper footer-wrapper">
+        <ul class="footer-social">
+          <li class="social-item"><a href="https://twitter.com/htmlacademy_ru" class="social-link">
+              <span class="visually-hidden">Twitter</span></a>
+          </li>
+          <li class="social-item"><a href="https://www.facebook.com/htmlacademy" class="social-link">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="social-link">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+        <a class="number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="copyright-link" href="https://htmlacademy.ru/">
+          <img src="img/index/footer-logo-htmlacademy.svg" alt="Разработано HTMLAcademy" width="115" height="34">
+        </a>
+      </div>
     </footer>
 
   </div>

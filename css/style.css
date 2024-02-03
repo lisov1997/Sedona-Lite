@@ -15,9 +15,32 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
 
-body {
-  margin: 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  margin: 0 auto;
+  height: 100%;
+  width: 1280px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -26,13 +49,26 @@ body {
   text-align: center;
 }
 
-.page-wrapper {
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   margin: 0 auto;
   width: 1200px;
   background-color: #ffffff;
 }
 
+.wrapper {
+  width: 1056px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
 .section-title{
+  margin: 0;
   font-size: 30px;
   font-weight: 700;
   color: #000000;
@@ -63,6 +99,26 @@ body {
 
 /* Header */
 
+.page-header {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.logo-link {
+  margin: 0;
+  margin-right: 30px;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.site-menu {
+  list-style-type: none;
+  margin: 0;
+  max-width: 500px;
+}
+
 .site-menu-link {
   font-size: 20px;
   font-weight: 700;
@@ -71,11 +127,24 @@ body {
   text-decoration: none;
 }
 
+.user-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  max-width: 350px;
+  margin-left: auto;
+}
+
 /* Main */
 
 /* Wellcome */
 
+.main-container {
+  flex-grow: 1;
+}
+
 .wellcome {
+  padding-top: 63px;
   background-color: #dbe9f2;
   background-image: url('/img/index/index-background-wellcome.jpg');
   background-repeat: no-repeat;
@@ -84,21 +153,51 @@ body {
 
 /* Advantages */
 
+.advantages .section-title {
+  margin-bottom: 31px;
+}
+
 .advantages-desk {
   font-size: 22px;
   line-height: 36px;
 }
 
+.advantages-list,
+.town-advantages-list,
+.bridge-advantages-list {
+  margin: 0;
+  list-style-type: none;
+}
+
 /* Search-hotel  */
+
+.search-hotel {
+  padding-top: 91px;
+  padding-bottom: 93px;
+}
+
+.search-hotel .section-title {
+  margin-bottom: 29px;
+}
 
 .search-hotel-desk {
   font-size: 22px;
   line-height: 26px;
+  margin-bottom: 56px;
 }
 
+.search-hotel-button {
+  background-color: #756157;
+}
 /* Subscribe */
 
+.subscribe {
+}
+
+
 .index-subscribe {
+  padding-top: 93px;
+  padding-bottom: 94px;
   color: #ffffff;
   background-color: #46424c;
   background-image: url('/img/index/index-background-wellcome.jpg');
@@ -117,6 +216,16 @@ body {
 
 /* Footer */
 
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  list-style-type: none;
+  max-width: 200px;
+}
+
 .number {
   font-size: 40px;
   color: #000000;
@@ -127,9 +236,11 @@ body {
 
 /* Catalog */
 
-/* Inner-footer */
+/* Inner-header */
 
-.inner-footer {
+.inner-header {
+  padding-top: 35px;
+  padding-bottom: 83px;
   color: #ffffff;
   background-color: #73504A;
   background-image: url('/img/catalog/catalog-background.jpg');
@@ -137,7 +248,18 @@ body {
   background-size: cover;
 }
 
+.page-title {
+  margin: 0;
+  font-size: 60px;
+  text-align: left;
+}
+
 /* Breadcrumbs */
+
+.breadcrumbs {
+  display: flex;
+  max-width: 650px;
+}
 
 .breadcrumbs-link {
   font-size: 16px;
@@ -146,6 +268,10 @@ body {
 }
 
 /* Filter */
+
+.catalog-filter {
+  display: flex;
+}
 
 .catalog-filter-title {
   font-size: 20px;
@@ -156,10 +282,63 @@ body {
   line-height: 23px;
 }
 
+/* Sorting-cards */
+
+.sorting-cards {
+  padding-top: 44px;
+  padding-bottom: 53px;
+}
+
+.sorting-cards-wrapper {
+  display: flex;
+}
+
+.hotels-found {
+  text-align: left;
+  margin-right: 191px;
+}
+
+.view-card {
+  margin-left: auto;
+  min-width: 300px;
+  list-style-type: none;
+}
+
 /* Sorted-cards */
 
 .card-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
+}
+
+.cards-list {
+  margin-bottom: 34px;
+  list-style-type: none;
+}
+
+.btn-wrapper {
+  margin-bottom: 30px;
+}
+
+/* Pagination */
+
+.pagination-wrapper {
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination {
+  display: flex;
+  max-width: 350px;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* Subscribe */
+
+.catalog-subscribe {
+  padding-top: 70px;
+  padding-bottom: 140px;
 }
