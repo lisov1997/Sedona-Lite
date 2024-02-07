@@ -119,8 +119,10 @@
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               </fieldset>
-              <button class="btn" type="submit" value="Применить">Применить</button>
-              <button type="reset" value="Сбросить">Сбросить</button>
+              <div class="catalog-filter-btn">
+                <button class="btn" type="submit" value="Применить">Применить</button>
+                <button type="reset" value="Сбросить">Сбросить</button>
+              </div>
             </form>
           </section>
         </div>
@@ -211,11 +213,12 @@
           </ul>
         </div>
         <div class="wrapper btn-wrapper">
-          <button class="button" type="button">Загрузить ещё</button>
+          <button class="button button-more" type="button">Загрузить ещё</button>
         </div>
         <div class="wrapper pagination-wrapper">
           <ul class="pagination">
-            <li class="pagination-item pagination-current" aria-current="page"><a href="#" class="pagination-link">1</a>
+            <li class="pagination-item pagination-current" aria-current="page"><a href="#"
+                class="pagination-link button">1</a>
             </li>
             <li class="pagination-item">
               <a href="#" class="pagination-link button">2</a>
@@ -246,11 +249,12 @@
       <section class="subscribe catalog-subscribe">
         <div class="container subscribe-container">
           <h2 class="section-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-desk">Только полезная информация и никакого спама,
+          <p class="subscribe-desk">Только полезная информация и никакого спама,<br>
             честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/courses" method="post">
-            <input type="email" name="subscribe-email" id="subscribe-email">
-            <label for="subscribe-email">Ваш e-mail</label>
+            <label for="subscribe-email">Ваш e-mail
+              <input type="email" name="subscribe-email" id="subscribe-email">
+            </label>
             <input class="subscribe-submit button" type="submit" value="Подписаться">
           </form>
         </div>
@@ -260,7 +264,7 @@
     <!-- Футер -->
 
     <footer class="page-footer">
-      <div class="wrapper">
+      <div class="footer-wrapper wrapper">
         <ul class="footer-social">
           <li class="social-item"><a href="https://twitter.com/htmlacademy_ru" class="social-link">
               <span class="visually-hidden">Twitter</span></a>
@@ -277,7 +281,8 @@
         </ul>
         <a class="number" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="copyright-link" href="https://htmlacademy.ru/">
-          <img src="img/index/footer-logo-htmlacademy.svg" alt="Разработано HTMLAcademy" width="115" height="34">
+          <img class="copyright-image" src="img/index/footer-logo-htmlacademy.svg" alt="Разработано HTMLAcademy"
+            width="115" height="34">
         </a>
       </div>
     </footer>
