@@ -171,7 +171,9 @@
 
 .wellcome-image {
   display: block;
-
+  object-fit: cover;
+  width:100%;
+  height: 100%;
 }
 /* Advantages */
 
@@ -193,7 +195,68 @@
 .town-advantages-list,
 .bridge-advantages-list {
   margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+
+.advantages-item {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  background-color: #83B3D3;
+}
+
+.text-content {
+  width: 220px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.advantages-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.item-image {
+  display: block;
+  grid-column: span 2;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.town-advantages-list,
+.bridge-advantages-list {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+
+.bridge-advantages-item,
+.town-advantages-item{
+  background-color: #F0F6FA;
+  display: flex;
+  min-width: 400px;
+  min-height: 384px;
+}
+
+.content {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.meal{
+  background-color:#FFFFFF;
+}
+
+.road {
+ background-color: #E6F0F6;
 }
 
 /* Search-hotel  */
@@ -284,6 +347,7 @@
 
 .copyright-image {
   display: block;
+  object-fit: cover;
 }
 
 /* Catalog */
@@ -369,15 +433,73 @@
 
 /* Sorted-cards */
 
+.cards-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 34px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px 18px;
+}
+
+.cards-item {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-item figure {
+  margin: 0;
+}
+
+.card-image {
+  display: block;
+  margin-bottom: 16px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .card-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
+  text-align: left;
+  margin-bottom: 16px;
 }
 
-.cards-list {
-  margin-bottom: 34px;
-  list-style-type: none;
+.card-info,
+.card-btn {
+  margin-bottom: 16px;
+}
+
+.card-info,
+.card-btn ,
+.card-rating {
+  display: flex;
+}
+
+.type-of-housing {
+  min-width: 133px;
+  margin-right: 25px;
+  text-align: left;
+}
+
+.cost-housing {
+  text-align: left;
+}
+
+.btn-card-more {
+  min-width: 133px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  margin-right: 26px;
+}
+
+.btn-to-favourites,
+.btn-in-favourites {
+  min-width: 140px;
 }
 
 .btn-wrapper {
@@ -393,7 +515,10 @@
   border-radius: 4px;
 }
 
-
+.housing-rating {
+  min-width: 160px;
+  margin-left: auto;
+}
 /* Pagination */
 
 .pagination-wrapper {
