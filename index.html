@@ -9,175 +9,247 @@
 
 <body class="page-body">
 
-  <div class="page-container">
+  <!-- Хедер -->
 
-    <!-- Хедер -->
+  <header class="page-header">
+    <nav class="header-nav">
+      <a class="logo-link" href="#">
+        <img class="logo-link-image" src="img/index/logo-of-sedona.svg" alt="Герб города Седона" width="139"
+          height="70">
+      </a>
+      <ul class="site-menu">
+        <li class="site-menu-item">
+          <a href="#" class="site-menu-link menu-link-current" aria-current="page">Главная</a>
+        </li>
+        <li class="site-menu-item">
+          <a href="" class="site-menu-link">О Седоне</a>
+        </li>
+        <li class="site-menu-item">
+          <a href="catalog.html" class="site-menu-link">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="user-list">
+        <li class="user-item">
+          <a href="" class="user-link">
+            <svg class="user-link-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+              width="19" height="19" fill="none" viewBox="0 0 19 19">
+              <path
+                d="m18.68 16.91-3.7-3.7c1-1.3 1.7-3 1.7-4.9 0-4.4-3.6-8-8-8s-8 3.7-8 8.1c0 4.4 3.6 8 8 8 1.8 0 3.5-.6 4.9-1.7l3.7 3.7 1.4-1.5Zm-10-2.5c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6Z" />
+            </svg>
+            <span class="visually-hidden">Поиск гостиницы</span>
+          </a>
+        </li>
+        <li class="user-item">
+          <a href="" class="user-link">
+            <svg class="user-link-icon icon-favorites" aria-hidden="true" focusable="false"
+              xmlns="http://www.w3.org/2000/svg" width="19" height="18" fill="none" viewBox="0 0 19 18">
+              <path
+                d="M9.58 17.41a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9a5.4 5.4 0 0 1 4.4-8.7c1.3 0 2.5.5 3.5 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
+            </svg>
+            <span class="favorites-counter">12</span>
+            <span class="visually-hidden">Избранные гостиницы</span>
+          </a>
+        </li>
+        <li class="user-item btn-item">
+          <a href="" class="btn user-btn">
+            Хочу сюда!
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <header class="page-header">
-      <nav class="header-nav">
-        <a class="logo-link">
-          <img src="img/index/logo-of-sedona.svg" alt="Герб города Седона" width="139" height="70">
-        </a>
-        <ul class="site-menu">
-          <li class="site-menu-item">
-            <a href="#" class="site-menu-link" aria-current="page">Главная</a>
-          </li>
-          <li class="site-menu-item">
-            <a href="" class="site-menu-link">О Седоне</a>
-          </li>
-          <li class="site-menu-item">
-            <a href="catalog.html" class="site-menu-link">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="user-list">
-          <li class="user-item">
-            <a href="" class="user-link">
-              <span class="visually-hidden">Поиск гостиницы</span>
-            </a>
-          </li>
-          <li class="user-item">
-            <a href="" class="user-link">
-              <span class="visually-hidden">Избранные гостиницы</span>
-            </a>
-          </li>
-          <li class="user-item">
-            <a href="" class="btn user-link">
-              Хочу сюда!
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <!-- Мэйн -->
 
-    <!-- Мэйн -->
-
-    <main class="main-index main-container">
-      <h1 class="visually-hidden">Путешествие в Седону</h1>
-      <section class="wellcome">
-        <h2 class="visually-hidden">
-          Добро пожаловать в Седону!
-        </h2>
-        <img class="wellcome-image" src="img/index/welcome.svg" alt="Добро пожаловать в Седону!" width="458"
-          height="352">
-      </section>
-      <section class="advantages">
-        <div class="section-wrapper">
-          <h2 class="visually-hidden">Преимущества путешествия в Седону</h2>
-          <p class="section-title">Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
-          <p class="advantages-desk">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-        </div>
-        <ul class="advantages-list">
-          <li class="advantages-item">
-            <div class="text-content">
-              <h3 class="advantages-title">Настоящий городок</h3>
-              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            </div>
-            <img class="item-image" src="img/index/photo-hotel.jpg" alt="Вид города Седоны из окна" width="800"
-              height="384">
-            <ul class="town-advantages-list">
-              <li class="town-advantages-item">
-                <div class="content">
-                  <h4 class="advantages-title">Жильё</h4>
-                  <p>Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
-                </div>
-              </li>
-              <li class="town-advantages-item meal">
-                <div class="content">
-                  <h4 class="advantages-title">Еда</h4>
-                  <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-                </div>
-              </li>
-              <li class="town-advantages-item">
-                <div class="content">
-                  <h4 class="advantages-title">Сувениры</h4>
-                  <p>Не только китайского,но и настоящего местного производства!</p>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li class="advantages-item">
-            <div class="text-content">
-              <h3 class="advantages-title">Там есть мост дьявола</h3>
-              <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            </div>
-            <img class="item-image" src="img/index/photo-bridge.jpg"
-              alt="Фотография Моста Дьявола: природного каменного моста между скалами" width="800" height="384">
-            <ul class="bridge-advantages-list">
-              <li class="bridge-advantages-item">
-                <div class="content">
-                  <h4 class="advantages-title">Небольшая площадь</h4>
-                  <p>Все достопримечательности находятся очень близко</p>
-                </div>
-              </li>
-              <li class="bridge-advantages-item road">
-                <div class="content">
-                  <h4 class="advantages-title">Красивая дорога</h4>
-                  <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                </div>
-              </li>
-              <li class="bridge-advantages-item">
-                <div class="content">
-                  <h4 class="advantages-title">Мало туристов</h4>
-                  <p>Большинство едет в Гранд Каньон и толпится там</p>
-                </div>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-      <section class="search-hotel">
-        <div class="section-wrapper">
-          <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-          <p class="section-title">
-            Заинтересовались?
-          </p>
-          <p class="search-hotel-desk">Укажите предполагаемые даты поездки,
-            и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a href="#" class="search-hotel-button button">ПОИСК ГОСТИНИЦЫ В седоне</a>
-        </div>
-      </section>
-      <section class="subscribe index-subscribe">
-        <div class="container subscribe-container">
-          <h2 class=" section-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-desk">Только полезная информация и никакого спама,<br>
-            честное бойскаутское!</p>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/courses" method="post">
-            <label for="subscribe-email">Ваш e-mail
-              <input type="email" name="subscribe-email" id="subscribe-email">
-            </label>
-            <input class="subscribe-submit" type="submit" value="Подписаться">
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <!-- Футер -->
-
-    <footer class="page-footer">
-      <div class="wrapper footer-wrapper">
-        <ul class="footer-social">
-          <li class="social-item"><a href="https://twitter.com/htmlacademy_ru" class="social-link">
-              <span class="visually-hidden">Twitter</span></a>
-          </li>
-          <li class="social-item"><a href="https://www.facebook.com/htmlacademy" class="social-link">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="social-link">
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-        </ul>
-        <a class="number" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="copyright-link" href="https://htmlacademy.ru/">
-          <img class="copyright-image" src="img/index/footer-logo-htmlacademy.svg" alt="Разработано HTMLAcademy"
-            width="115" height="34">
-        </a>
+  <main class="main-index main-container">
+    <h1 class="visually-hidden">Путешествие в Седону</h1>
+    <section class="wellcome">
+      <h2 class="visually-hidden">
+        Добро пожаловать в Седону!
+      </h2>
+    </section>
+    <section class="advantages">
+      <div class="section-wrapper">
+        <h2 class="visually-hidden">Преимущества путешествия в Седону</h2>
+        <p class="section-title">Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
+        <p class="advantages-desk">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
-    </footer>
+      <ul class="advantages-list">
+        <li class="advantages-item">
+          <div class="text-content">
+            <h3 class="advantages-title">Настоящий городок</h3>
+            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+          <img class="item-image" src="img/index/photo-hotel.jpg" alt="Вид города Седоны из окна" width="800"
+            height="384">
+          <ul class="town-advantages-list">
+            <li class="town-advantages-item housing">
+              <!-- <div class="content housing"> -->
+              <h4 class="town-advantages-title ">Жильё</h4>
+              <p>Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
+              <!-- </div> -->
+            </li>
+            <li class="town-advantages-item meal">
+              <!-- <div class="content meal"> -->
+              <h4 class="town-advantages-title ">Еда</h4>
+              <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <!-- </div> -->
+            </li>
+            <li class="town-advantages-item souvenirs">
+              <!-- <div class="content souvenirs"> -->
+              <h4 class="town-advantages-title">Сувениры</h4>
+              <p>Не только китайского,но и настоящего местного производства!</p>
+              <!-- </div> -->
+            </li>
+          </ul>
+        </li>
+        <li class="advantages-item">
+          <div class="text-content">
+            <h3 class="advantages-title">Там есть мост дьявола</h3>
+            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </div>
+          <img class="item-image" src="img/index/photo-bridge.jpg"
+            alt="Фотография Моста Дьявола: природного каменного моста между скалами" width="800" height="384">
+          <ul class="bridge-advantages-list">
+            <li class="bridge-advantages-item">
+              <!-- <div class="content"> -->
+              <h4 class="bridge-advantages-title">Небольшая площадь</h4>
+              <p>Все достопримечательности находятся очень близко</p>
+              <!-- </div> -->
+            </li>
+            <li class="bridge-advantages-item road">
+              <!-- <div class="content"> -->
+              <h4 class="bridge-advantages-title">Красивая дорога</h4>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <!-- </div> -->
+            </li>
+            <li class="bridge-advantages-item">
+              <!-- <div class="content"> -->
+              <h4 class="bridge-advantages-title">Мало туристов</h4>
+              <p>Большинство едет в Гранд Каньон и толпится там</p>
+              <!-- </div> -->
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section class="search-hotel">
+      <div class="section-wrapper">
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+        <p class="section-title">
+          Заинтересовались?
+        </p>
+        <p class="search-hotel-desk">Укажите предполагаемые даты поездки,
+          и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a href="#" class="btn btn-large search-hotel-btn">ПОИСК ГОСТИНИЦЫ В седоне</a>
+      </div>
+    </section>
+    <section class="subscribe index-subscribe">
+      <div class="container subscribe-container">
+        <h2 class=" section-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-desk">Только полезная информация и никакого спама,<br>
+          честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/courses" method="post">
+          <label for="subscribe-email">Ваш e-mail
+            <input type="email" name="subscribe-email" id="subscribe-email">
+          </label>
+          <input class="subscribe-submit btn btn-large" type="submit" value="Подписаться">
+        </form>
+      </div>
+    </section>
+  </main>
 
-  </div>
+  <!-- Футер -->
+
+  <footer class="page-footer">
+    <div class="wrapper footer-wrapper">
+      <ul class="footer-social">
+        <li class="social-item">
+          <a href="https://twitter.com/htmlacademy_ru" class="social-link">
+            <svg class="social-icon" width="18" height="15" viewBox="0 0 18 15" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_118727_67)">
+                <path
+                  d="M11.6 0.200056C13.4 -0.299944 14.8 0.500056 15.4 1.40006C16.1 1.20006 16.8 0.900056 17.5 0.700056C17.5 1.60006 16.9 2.20006 16.6 2.50006C17.3 2.60006 18 1.90006 18 1.90006C17.8 2.90006 16.9 3.70006 16.3 3.90006C16.1 10.7001 13 15.1001 5.7 15.0001C5.1 15.0001 5.8 15.0001 5.2 15.0001C4.8 15.0001 0.8 14.5001 0 13.1001C2.4 13.3001 4.1 12.7001 5 11.9001C4 11.6001 2.1 11.5001 1.8 9.00006C2.2 9.10006 2.4 9.20006 3.1 9.10006C1.8 8.30006 0.4 7.50006 0.5 5.30006C0.8 5.60006 1.6 5.80006 1.9 5.80006C1.1 5.60006 -0.2 2.50006 0.9 0.900056C2.8 2.80006 4.9 4.50006 8.5 4.70006C8.7 2.30006 9.7 0.800056 11.6 0.200056Z" />
+              </g>
+              <defs>
+                <clipPath id="clip0_118727_67">
+                  <rect width="18" height="15" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.facebook.com/htmlacademy" class="social-link">
+            <svg class="social-icon" aria-hidden="true" focusable="false" width="10" height="18" viewBox="0 0 10 18"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_18711_1504)">
+                <path d="M7 0C4.8 0 3 1.8 3 4V6H0V10H3V18H7V10H10V6H7V4H10V0H7Z" />
+              </g>
+              <defs>
+                <clipPath id="clip0_18711_1504">
+                  <rect width="10" height="18" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="social-link">
+            <svg class="social-icon" aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_18711_1528)">
+                <path
+                  d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z" />
+              </g>
+              <defs>
+                <clipPath id="clip0_18711_1528">
+                  <rect width="20" height="16" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+      <a class="number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="copyright-link" href="https://htmlacademy.ru/">
+        <span class="visually-hidden">Разработано HTML Academy</span>
+        <svg class="copyright-icon" aria-hidden="true" focusable="false" width="115" height="34" viewBox="0 0 115 34"
+          fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 12.8999V15.4999H2.5V12.8999H0Z" />
+          <path
+            d="M11.5999 4.5C9.9999 4.5 8.7999 5.2 7.9999 6.2H7.8999V0H5.8999V15.5H7.8999V10.2C7.8999 8.1 9.1999 6.6 11.1999 6.6C12.9999 6.6 14.0999 8 14.0999 9.8V15.5H16.0999V9.4C16.1999 6.4 14.2999 4.5 11.5999 4.5Z" />
+          <path
+            d="M26.5999 4.8001H21.7999V1.1001H19.7999V4.9001H17.8999V6.9001H19.7999V12.9001C19.7999 14.6001 20.7999 15.6001 22.4999 15.6001H26.5999V13.6001H22.8999C22.1999 13.6001 21.7999 13.2001 21.7999 12.5001V6.8001H26.5999V4.8001Z" />
+          <path
+            d="M41.1 4.6001C39.5 4.6001 38.2 5.4001 37.6 6.7001H37.5C36.9 5.5001 35.7 4.6001 34.1 4.6001C32.7 4.6001 31.6 5.4001 31 6.4001H30.9V4.8001H29V15.4001H31V10.0001C31 8.0001 32 6.5001 33.6 6.5001C35.1 6.5001 36 7.5001 36 9.1001V15.4001H38V9.8001C38 7.4001 39.4 6.5001 40.6 6.5001C42.1 6.5001 43 7.5001 43 9.1001V15.4001H45V8.9001C45.1 6.4001 43.6 4.6001 41.1 4.6001Z" />
+          <path
+            d="M47.8 12.7C47.8 14.4 48.8 15.4 50.6 15.4H52.6V13.4H50.9001C50.2001 13.4 49.8 13 49.8 12.3V0H47.8V12.7Z" />
+          <path
+            d="M28.9001 19.6999C28.0001 18.5999 26.7001 17.8999 25.0001 17.8999C21.9001 17.8999 19.6001 20.1999 19.6001 23.4999C19.6001 26.7999 21.9001 29.0999 25.0001 29.0999C26.8001 29.0999 28.0001 28.2999 28.8001 27.1999H28.9001V28.7999H30.9001V18.1999H28.9001V19.6999ZM25.3001 27.0999C23.1001 27.0999 21.7001 25.4999 21.7001 23.4999C21.7001 21.4999 23.1001 19.8999 25.3001 19.8999C27.5001 19.8999 28.9001 21.4999 28.9001 23.4999C28.9001 25.3999 27.5001 27.0999 25.3001 27.0999Z" />
+          <path
+            d="M44.2 21.9999C43.7 19.5999 41.5999 17.8999 38.7999 17.8999C35.3999 17.8999 33.2 20.3999 33.2 23.4999C33.2 26.5999 35.3999 29.0999 38.7999 29.0999C41.5999 29.0999 43.7 27.2999 44.2 24.8999H42.0999C41.6999 26.1999 40.3999 27.1999 38.7999 27.1999C36.5999 27.1999 35.2 25.5999 35.2 23.5999C35.2 21.5999 36.5999 19.9999 38.7999 19.9999C40.3999 19.9999 41.5999 20.9999 42.0999 22.1999H44.2V21.9999Z" />
+          <path
+            d="M55.1 19.6999C54.2 18.5999 52.9001 17.8999 51.2001 17.8999C48.1001 17.8999 45.8 20.1999 45.8 23.4999C45.8 26.7999 48.1001 29.0999 51.2001 29.0999C53.0001 29.0999 54.2 28.2999 55 27.1999H55.1V28.7999H57.1V18.1999H55.1V19.6999ZM51.5 27.0999C49.3 27.0999 47.9001 25.4999 47.9001 23.4999C47.9001 21.4999 49.3 19.8999 51.5 19.8999C53.7 19.8999 55.1 21.4999 55.1 23.4999C55.1 25.3999 53.6 27.0999 51.5 27.0999Z" />
+          <path
+            d="M68.6999 19.7999C67.7999 18.6999 66.4999 17.8999 64.7999 17.8999C61.6999 17.8999 59.3999 20.1999 59.3999 23.4999C59.3999 26.7999 61.5999 29.0999 64.7999 29.0999C66.4999 29.0999 67.7999 28.2999 68.5999 27.2999H68.6999V28.7999H70.6999V13.3999H68.6999V19.7999ZM65.0999 27.0999C62.8999 27.0999 61.4999 25.4999 61.4999 23.4999C61.4999 21.4999 62.8999 19.8999 65.0999 19.8999C67.2999 19.8999 68.6999 21.4999 68.6999 23.4999C68.5999 25.4999 67.1999 27.0999 65.0999 27.0999Z" />
+          <path
+            d="M78.3 17.8999C75 17.8999 72.8 20.3999 72.8 23.4999C72.8 26.4999 74.9 29.0999 78.3 29.0999C80.8 29.0999 82.8 27.7999 83.5 25.4999H81.4C80.9 26.4999 79.8 27.0999 78.4 27.0999C76.5 27.0999 75.1 25.7999 75 24.1999H83.8C84 20.5999 81.8 17.8999 78.3 17.8999ZM78.3 19.7999C80 19.7999 81.3 20.7999 81.6 22.3999H75.1C75.4 20.8999 76.6 19.7999 78.3 19.7999Z" />
+          <path
+            d="M98.2001 17.8999C96.6001 17.8999 95.3001 18.6999 94.6001 19.8999H94.5001C93.9001 18.6999 92.7001 17.8999 91.1001 17.8999C89.7001 17.8999 88.6001 18.5999 88.0001 19.6999V18.1999H86.1001V28.7999H88.1001V23.3999C88.1001 21.3999 89.1001 19.9999 90.7001 19.8999C92.2001 19.8999 93.1001 20.8999 93.1001 22.4999V28.7999H95.1001V23.1999C95.1001 20.7999 96.5001 19.8999 97.7001 19.8999C99.2001 19.8999 100.1 20.8999 100.1 22.4999V28.7999H102.1V22.2999C102.2 19.6999 100.7 17.8999 98.2001 17.8999Z" />
+          <path
+            d="M109.4 27.0001L105.8 18.1001H103.6L108.4 29.7001C108.1 30.6001 107.7 30.9001 106.7 30.9001H104.2V32.9001H106.7C108.5 32.9001 109.5 32.1001 110.2 30.3001L114.9 18.1001H112.8L109.4 27.0001Z" />
+        </svg>
+
+      </a>
+    </div>
+  </footer>
+
 
 </body>
 
