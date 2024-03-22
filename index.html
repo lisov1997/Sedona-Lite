@@ -150,10 +150,11 @@
         <p class="subscribe-desk">Только полезная информация и никакого спама,<br>
           честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <label for="subscribe-email">Ваш e-mail
-            <input type="email" name="subscribe-email" id="subscribe-email">
+          <label class="visually-hidden" for="subscribe-email">Ваш e-mail
           </label>
-          <input class="subscribe-submit btn btn-large" type="submit" value="Подписаться">
+          <input class="subscribe-email-field" placeholder="Ваш e-mail" type="email" name="subscribe-email"
+            id="subscribe-email">
+          <button class="subscribe-submit btn btn-large" type="submit" value="Подписаться">Подписаться</button>
         </form>
       </div>
     </section>
@@ -250,6 +251,88 @@
     </div>
   </footer>
 
+  <!-- Модальное окно -->
+
+  <section class="modal modal-close">
+    <div class="modal-container modal-auth">
+      <h2 class="section-title">Поиск гостиницы в Седоне</h2>
+      <button class="modal-close-btn">
+        <span class="visually-hidden">Закрыть</span>
+        <svg class="modal-close-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none"
+          viewBox="0 0 13 13">
+          <g clip-path="url(#a)">
+            <path
+              d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" />
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff" d="M0 0h13v13H0z" />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
+      <form class="modal-form modal-content" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="field-group">
+          <label class="field-label" for="date-of-arrival">Дата заезда:</label>
+          <input class="auth-form-field date-field" type="text" value="27 апреля 2020" id="date-of-arrival"
+            placeholder="Укажите дату">
+          <span class="message-of-error">Мы не можем отправить вас в прошлое.</span>
+        </p>
+        <p class="field-group">
+          <label class="field-label" for="date-of-departure">Дата выезда:</label>
+          <input class="auth-form-field date-field" type="text" value="1 сентября 2021" id="date-of-departure"
+            placeholder="Укажите дату">
+          <span class="message-of-succes">На эти даты есть свободные номера. Пока есть.</span>
+        </p>
+        <div class="field-group">
+          <label class="field-label" for="count-of-adults">Взрослые:</label>
+          <div class="quantity-inner">
+            <button class="btn-minus">
+              <svg class="btn-minus-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="1" fill="none"
+                viewBox="0 0 13 1">
+                <path d="M0 0v1h13V0H0Z" />
+              </svg>
+            </button>
+            <input class="quantity" type="text" value="2" id="count-of-adults">
+            <button class="btn-plus">
+              <svg class="btn-plus-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none"
+                viewBox="0 0 13 13">
+                <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+              </svg>
+            </button>
+          </div>
+          <label class="field-label" for="count-of-children">Дети:</label>
+          <button class="info">
+            <span class="visually-hidden">
+              Посмотреть дополнительную информацию
+            </span>
+            <span class="info-content ">
+              Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+              размещаются бесплатно.
+            </span>
+          </button>
+          <div class="quantity-inner">
+            <button class="btn-minus">
+              <svg class="btn-minus-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="1" fill="none"
+                viewBox="0 0 13 1">
+                <path d="M0 0v1h13V0H0Z" />
+              </svg>
+            </button>
+            <input class="quantity" type="text" value="1" id="count-of-children">
+            <button class="btn-plus">
+              <svg class="btn-plus-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none"
+                viewBox="0 0 13 13">
+                <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <p class="field-group">
+          <button class="modal-form-submit" type="submit">Найти</button>
+        </p>
+      </form>
+    </div>
+  </section>
 
 </body>
 
